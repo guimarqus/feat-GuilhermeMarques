@@ -9,7 +9,13 @@ body{
     font-family:Arial, Helvetica, sans-serif;
     background:#121212;
     color:white;
-    line-height:1.6;
+    display:flex;
+    flex-direction:column;
+    min-height:100vh;
+}
+
+main{
+    flex:1;
 }
 
 
@@ -55,7 +61,7 @@ body{
 .acoes{
     width:90%;
     max-width:1100px;
-    margin:40px auto;
+    margin:40px auto 0;
 }
 
 .acoes-titulo{
@@ -128,16 +134,15 @@ body{
 
 
 
-.rodape
-{
-    width: 100%;
-    padding: 40px 20px;
-    background: #1e1e1e;
-    border-top: 2px solid #003531;
-    color: #aaaaaa;
-    text-align: center;
+.rodape{
+    width:100vw;
+    margin-top:auto;
+    padding:40px 20px;
+    background:#1e1e1e;
+    border-top:2px solid #003531;
+    color:#aaaaaa;
+    text-align:center;
 }
-
 
 
 
@@ -155,4 +160,46 @@ body{
         width:90%;
     }
 
+}
+
+
+
+.pagina-tech{
+    width:90%;
+    max-width:1000px;
+    margin:40px auto;
+}
+
+.secao-tecnologia{
+    background:#1e1e1e;
+    border:1px solid #003531;
+    border-radius:12px;
+    padding:30px;
+    margin-bottom:25px;
+    text-align:center;
+}
+
+.secao-tecnologia h2{
+    margin-bottom:15px;
+}
+
+.secao-tecnologia p{
+    color:#bbbbbb;
+    line-height:1.6;
+}
+
+.botao-doc{
+    display:inline-block;
+    margin-top:20px;
+    padding:12px 20px;
+    background:#003531;
+    color:white;
+    text-decoration:none;
+    border-radius:8px;
+    font-weight:bold;
+    transition:0.3s;
+}
+
+.botao-doc:hover{
+    background:#01463f;
 }
